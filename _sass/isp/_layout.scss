@@ -12,10 +12,13 @@
 	text-align: right;
 	padding-bottom: 8px;
 	border-bottom: 14px solid $brand-color;
+	font-size: $base-font-size;
+	line-height: 1;
 }
 
 .mainnavigation {
 	margin-top: 2px;
+	margin-bottom: 3px;
 	border-top: 1px solid black;
 	font-size: 118%;
 	font-weight: 700;
@@ -60,13 +63,13 @@
 	background: white;
 	position: absolute;
 	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 23px;
 }
 
 .breadcrumb {
 	margin-top: 7px;
 	margin-bottom: 10px;
+	line-height: 1;
 
 	a {
 		color: #666666;
