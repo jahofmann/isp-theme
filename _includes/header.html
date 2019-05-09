@@ -32,7 +32,13 @@
   </div>
   <div class="breadcrumb">
 	  {% for crumb in page.breadcrumbs %}
-	  <a href="{{ crumb.url }}">{{ crumb.name }} » </a>
+	  <a href="{{ crumb.url }}">{{ crumb.name }}</a> »
+	  {% endfor %}
+	  {% for link in page.sidenav.links %}
+		  {% assign link_url = link.url | split: "/" | last %}
+		  {% if page.parent and page.parent == link_url %}
+			  <a href="{{link.url}}">{{link.name}}</a> »
+		  {% endif %}
 	  {% endfor %}
 	  {{ page.title }}
   </div>
