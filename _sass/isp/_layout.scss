@@ -16,6 +16,14 @@
 	line-height: 1;
 }
 
+.topnavigation a {
+	color: #333;
+}
+
+.topnavigation .inaktiv {
+	color: #999;
+}
+
 .mainnavigation {
 	margin-top: 2px;
 	margin-bottom: 3px;
@@ -170,7 +178,7 @@
 	}
 
 	p {
-		line-height: 1.0;
+		line-height: 1.4;
 	}
 
 	.institutelogo {

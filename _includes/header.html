@@ -4,7 +4,11 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
   
     <div class="topnavigation">
+	  {% if page.language.language %}
 	    <a href="{{ page.language.url }}">{{ page.language.language }}</a>
+	  {% else %}
+	    <span class="inaktiv">English</span>
+	  {% endif %}
   </div>
   <div class="mainnavigation">
 	  <ul class="mainmenu">
